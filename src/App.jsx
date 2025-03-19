@@ -1,16 +1,13 @@
-import React, { useState, useEffect } from "react";
-import "./App.css"
+import React from "react";
+import useLocalStorage from "use-local-storage"; // Correct import
+import "./App.css";
+
 const App = () => {
+  const [theme, setTheme] = useLocalStorage("theme", "light"); // Use the custom hook
 
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
-
-  useEffect(() => {
-
+  React.useEffect(() => {
     document.body.className = theme;
-
-    localStorage.setItem("theme", theme);
   }, [theme]);
-
 
   const toggleTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
