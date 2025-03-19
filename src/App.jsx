@@ -1,9 +1,9 @@
 import React from "react";
-import useLocalStorage from "use-local-storage"; // Correct import
+import useLocalStorage from "use-local-storage";
 import "./App.css";
 
 const App = () => {
-  const [theme, setTheme] = useLocalStorage("theme", "light"); // Use the custom hook
+  const [theme, setTheme] = useLocalStorage("theme", "light"); 
 
   React.useEffect(() => {
     document.body.className = theme;
