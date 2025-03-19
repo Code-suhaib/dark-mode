@@ -1,0 +1,35 @@
+/* Smooth transition */
+body {
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Light Mode */
+  .light {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  /* Dark Mode */
+  .dark {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  /* Center Content */
+  .container {
+    text-align: center;
+    margin-top: 10rem;
+  }
+  
+  /* Button Styling */
+  button {
+    margin-top: 2rem;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #008cba;
+    color: white;
+  }
+  
